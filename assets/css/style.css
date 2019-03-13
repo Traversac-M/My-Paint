@@ -1,0 +1,242 @@
+input[type="text"] {
+	width: 55px;
+	text-align: right;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url("../images/background.png");
+}
+
+.paintTitle {
+	margin: 10px 0 10px 0;
+	font-size: 50px;
+	text-align: center;
+	font-style: oblique;
+	text-decoration: underline overline purple;
+	color: blue;
+}
+
+#Canvas {
+	border: 1px solid;
+	background: white;
+}
+
+#titleFile {
+	margin: 10px 0 10px 0;
+	display: flex;
+}
+
+.tools {
+	float: left;
+	border-top: 1px solid;
+	padding: 10px 21px 0 25px;
+}
+
+.fas, .far {
+	width: 15px;
+	height: 20px;
+	text-align: center;
+}
+
+.fa-pen, .fa-line, .fa-square, .fa-circle, .fa-eraser, .fa-minus, .fa-times {
+	margin-top: 5px;
+}
+
+.alignColor {
+	margin-left: 115px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Set buttons design
+|--------------------------------------------------------------------------
+|
+*/
+
+.file-input-wrapper {
+    width: 70px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    margin: 5px 0 20px 0;
+}
+
+.file-input-wrapper > input[type="file"] {
+    font-size: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.file-input-wrapper > .btn-file-input {
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+}
+
+.file-input-wrapper:hover > .btn-file-input {
+    background-color: #4CAF50;
+    border:none;
+}
+
+#saveImg {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Set tools sizes buttons
+|--------------------------------------------------------------------------
+|
+*/
+
+.showPen, .showLine, .showSquare, .showCircle, .showEraser  {
+	display: none;
+}
+
+#penSize1, #lineSize1, #squareSize1, #circleSize1, #eraseSize1, 
+#penSize2, #lineSize2, #squareSize2, #circleSize2, #eraseSize2, 
+#penSize3, #lineSize3, #squareSize3, #circleSize3, #eraseSize3, 
+#penSize4, #lineSize4, #squareSize4, #circleSize4, #eraseSize4 {
+	padding: 5px;
+	width: 70px;
+	background-color: lightgrey;
+	margin: 2px 0 2px 0;
+	border: none;
+}
+
+#penSize1:hover, #lineSize1:hover, #squareSize1:hover, #circleSize1:hover, #eraseSize1:hover, 
+#penSize2:hover, #lineSize2:hover, #squareSize2:hover, #circleSize2:hover, #eraseSize2:hover, 
+#penSize3:hover, #lineSize3:hover, #squareSize3:hover, #circleSize3:hover, #eraseSize3:hover, 
+#penSize4:hover, #lineSize4:hover, #squareSize4:hover, #circleSize4:hover, #eraseSize4:hover {
+	background-color: #4CAF50;
+}
+/*
+|--------------------------------------------------------------------------
+| Colors 1st line
+|--------------------------------------------------------------------------
+|
+*/
+
+#black {
+	height: 20px;
+  	width: 20px;
+	background-color: black;
+}
+
+#grey {
+	height: 20px;
+  	width: 20px;
+	background-color: grey;
+}
+
+#red {
+	height: 20px;
+  	width: 20px;
+	background-color: red;
+}
+
+#orange {
+	height: 20px;
+  	width: 20px;
+	background-color: orange;
+}
+
+#yellow {
+	height: 20px;
+  	width: 20px;
+	background-color: yellow;
+}
+
+#green {
+	height: 20px;
+  	width: 20px;
+	background-color: green;
+}
+
+#blue {
+	height: 20px;
+  	width: 20px;
+	background-color: blue;
+}
+
+#purple {
+	height: 20px;
+  	width: 20px;
+	background-color: purple;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Colors 2nd line
+|--------------------------------------------------------------------------
+|
+*/
+
+#white {
+	height: 20px;
+  	width: 20px;
+	background-color: white;
+}
+
+#lightgrey {
+	height: 20px;
+  	width: 20px;
+	background-color: lightgrey;
+}
+
+#pink {
+	height: 20px;
+  	width: 20px;
+	background-color: pink;
+}
+
+#lightsalmon {
+	height: 20px;
+  	width: 20px;
+	background-color: lightsalmon;
+}
+
+#lightyellow {
+	height: 20px;
+  	width: 20px;
+	background-color: lightyellow;
+}
+
+#lime {
+	height: 20px;
+  	width: 20px;
+	background-color: lime;
+}
+
+#lightblue {
+	height: 20px;
+  	width: 20px;
+	background-color: lightblue;
+}
+
+#fuchsia {
+	height: 20px;
+  	width: 20px;
+	background-color: fuchsia;
+}
+
+#current {
+	margin: 10px 5px 0 10px;
+	height: 25px;
+  	width: 25px;
+}
+
+#chooseColor {
+	margin: 10px;
+	width: 40px;
+}

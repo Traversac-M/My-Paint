@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>My Paint</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="paintTitle">My Paint</div>
+    <canvas id="Canvas"></canvas>
+
+<!--    Les boutons des differentes options -->
+    
+    <div class="tools">
+        <div class="file-input-wrapper">
+          <button class="btn-file-input">Load a file</button>
+          <input type="file" id="addImg" accept="image/*" data-type='image'/>        
+        </div>
+        <label>File name:</label>
+		<input type="text" id="titleFile">
+        <div class="file-input-wrapper">
+            <a href="#" id="saveImg">Save</a>
+        </div>
+
+        <p>Tools</p>
+
+        <div><button id="pencil" title="Pencil"><i class="fas fa-pen"></i></button></div>
+        <div class="showPen"> 
+            <div><button id="penSize1">Size 1</button></div>
+            <div><button id="penSize2">Size 2</button></div>
+            <div><button id="penSize3">Size 3</button></div>
+            <div><button id="penSize4">Size 4</button></div>
+        </div>
+
+        <div><button id="line" title="Draw a line"><i class="fas fa-minus"></i>  </button></div>
+        <div class="showLine"> 
+            <div><button id="lineSize1">Size 1</button></div>
+            <div><button id="lineSize2">Size 2</button></div>
+            <div><button id="lineSize3">Size 3</button></div>
+            <div><button id="lineSize4">Size 4</button></div>
+        </div>
+
+        <div><button id="square" title="Draw a square"><i class="far fa-square"></i></button></div>
+        <div class="showSquare"> 
+            <div><button id="squareSize1">Size 1</button></div>
+            <div><button id="squareSize2">Size 2</button></div>
+            <div><button id="squareSize3">Size 3</button></div>
+            <div><button id="squareSize4">Size 4</button></div>
+        </div>
+
+        <div><button id="circle" title="Draw a circle"><i class="far fa-circle"></i></button></div>
+        <div class="showCircle"> 
+            <div><button id="circleSize1">Size 1</button></div>
+            <div><button id="circleSize2">Size 2</button></div>
+            <div><button id="circleSize3">Size 3</button></div>
+            <div><button id="circleSize4">Size 4</button></div>
+        </div>
+
+        <div><button id="erase" title="Erase something"><i class="fas fa-eraser"></i></button></div>
+        <div class="showEraser"> 
+            <div><button id="eraseSize1">Size 1</button></div>
+            <div><button id="eraseSize2">Size 2</button></div>
+            <div><button id="eraseSize3">Size 3</button></div>
+            <div><button id="eraseSize4">Size 4</button></div>
+        </div>
+
+        <div><button id="reset" title="Reset all"><i class="fas fa-times"></i></button></div>
+
+        <label>Width</label>
+        <div><input type="text" id="changeWidth" placeholder="1400"></div>
+        <label>Height</label>
+        <div><input type="text" id="changeHeight" placeholder="750"></div>
+
+        <div class="file-input-wrapper">
+            <button id="sizeBtn" class="btn-file-input">Change</button>
+        </div>
+
+        <p id="mousePos"></p>    
+    </div>
+
+<!--    Les boutons de couleurs 1ere ligne -->
+
+    <div class="alignColor">
+        <button id="black"></button>
+        <button id="grey"></button>
+        <button id="red"></button>
+        <button id="orange"></button>
+        <button id="yellow"></button>
+        <button id="green"></button>
+        <button id="blue"></button>
+        <button id="purple"></button>
+        <button id="current"></button>
+    </div>
+
+<!--    Les boutons de couleurs 2éme ligne -->
+
+    <div class="alignColor">
+        <button id="white"></button>
+        <button id="lightgrey"></button>
+        <button id="pink"></button>
+        <button id="lightsalmon"></button>        
+        <button id="lightyellow"></button>
+        <button id="lime"></button>
+        <button id="lightblue"></button>
+        <button id="fuchsia"></button>
+        <input type="color" id="chooseColor">
+    </div>
+    
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/toolSize.js"></script> 
+</body>
+</html>
